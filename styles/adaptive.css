@@ -1,0 +1,319 @@
+    @media (max-width: 768px) {
+        .header {
+            min-height: 40px;
+            padding: 5px 0 5px 0;
+        }
+        .menu__item {
+            margin-left: 0;
+        }
+        .menu__list {
+            position: fixed;
+            top: -10px;
+            left: -100%;
+            width: 35%;
+            height: 90vh;
+            padding: 20px 15px 0 15px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(239, 241, 233, 0.6);
+            transition: 0.6s all;
+        }
+        .menu__list_active {
+            position: fixed;
+            top: -10px;
+            left: 8px;
+            width: 50%;
+            height: 90vh;
+            padding: 20px 15px 0 15px;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: rgb(239, 240, 239);
+            transition: 0.6s all;
+            z-index: 50;
+        }
+        .menu__link {
+            font-size: 15px;
+            color: #000;
+        }
+        .hamburger {
+            display: block;
+            position: fixed;
+            right: 20px;
+            top: 50px;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #000;
+            margin-bottom: 4px;
+        }
+        .hamburger_active :nth-child(1) {
+            transform: translateY(1px) rotate(-45deg);
+            transition: 0.3s all;
+        }
+        .hamburger_active :nth-child(2) {
+            display: none;
+        }
+        .hamburger_active :nth-child(3) {
+            transform: translateY(-5px) rotate(45deg);
+            transition: 0.3s all;
+        }
+        .promo {
+            padding: 30px 0 10px 0;
+        }
+        .title {
+            font-size: 40px;
+            line-height: 55px;
+        }
+        .connection {
+            padding: 40px 0 40px 0;
+        }
+        .brands {
+            padding: 35px 0 50px 0;
+        }
+        .projects {
+            padding: 40px 0 40px 0;
+        }
+        .team {
+            padding: 40px 0 50px 0;
+        }
+        .rewiews {
+            padding: 40px 0 50px 0;
+        }
+        .rewiews__inner ::before {
+            display: none;
+        }
+        .rewiews__descr {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .touch {
+            padding: 40px 0 50px 0;
+        }
+        .feed__forms {
+            padding: 50px 0 40px 0;
+        }
+    }
+    
+    @media (max-width: 425px) {
+        .logo__top {
+            width: 135px;
+            height: 55px;
+        }
+        .hamburger {
+            top: 37px;
+        }
+        .header {
+            min-height: 40px;
+            padding: 0px 0 0px 0;
+        }
+        .promo {
+            padding: 10px 0 10px 0;
+        }
+        .title {
+            font-size: 37px;
+            line-height: 50px;
+        }
+        .connection {
+            padding: 35px 0 35px 0;
+        }
+        .connection__btn {
+            width: 130px;
+            height: 35px;
+            padding: 7px 0 13px 0;
+        }
+        .brands {
+            padding: 35px 0 35px 0;
+        }
+        .brands__title {
+            font-size: 18px;
+        }
+        .brands__inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .brands__wrepper {
+            margin-top: 20px;
+        }
+        .brands__subtitle {
+            margin-top: 10px;
+        }
+        .brands__descr {
+            margin-top: 10px;
+        }
+        .brands__img {
+            max-width: 60%;
+            height: auto;
+            padding: 0 10px;
+        }
+        .projects {
+            padding: 30px 0 30px 0;
+        }
+        .projects__inner {
+            margin-top: 43px;
+            display: grid;
+            grid-template-columns: repeat(2, 3fr);
+            grid-gap: 20px;
+        }
+        .projects__subtitle {
+            font-size: 14px;
+        }
+        .projects__descr {
+            font-size: 12px;
+        }
+        .team {
+            padding: 35px 0 35px 0;
+        }
+        .team__inner {
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        .team__wrapper {
+            margin-top: 20px;
+        }
+        .team__photo {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .team__contacts {
+            margin-top: -15px;
+        }
+        .rewiews {
+            padding: 35px 0 35px 0;
+            width: 100%;
+        }
+        .rewiews__img {
+            width: 50px;
+            height: 50px;
+        }
+        .rewiews__inner {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        .rewiews__descr {
+            font-size: 15px;
+        }
+        .user__name {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .rewiews_2 {
+            margin-top: 10px;
+        }
+        .touch {
+            padding: 30px 0 30px 0;
+        }
+        .touch__inner {
+            display: flex;
+            margin-top: 45px;
+            flex-direction: column;
+        }
+        .touch__wrapper {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .touch__subtitle {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        .touch__adress {
+            margin-top: 5px;
+        }
+        .touch__mail {
+            margin-top: 5px;
+        }
+        .touch__link {
+            margin-top: -5px;
+        }
+        .down {
+            margin-top: 25px;
+        }
+        .feed__button {
+            width: 40%;
+        }
+        .name {
+            width: 80%;
+        }
+        .mail {
+            width: 80%;
+        }
+        .footer {
+            font-size: 13px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .logo__top {
+            width: 125px;
+            height: 50px;
+        }
+        .menu__link {
+            font-size: 12px;
+            color: #000;
+        }
+        .hamburger {
+            width: 25px;
+            top: 35px
+        }
+        .title {
+            font-size: 33px;
+            line-height: 45px;
+        }
+        .connection {
+            padding: 30px 0 30px 0;
+        }
+        .connection__descr {
+            font-size: 16px;
+        }
+        .connection__btn {
+            font-size: 14px;
+        }
+        .brands__title {
+            font-size: 15px;
+        }
+        .brands__subtitle {
+            font-size: 15px;
+        }
+        .brands {
+            padding: 30px 0 30px 0;
+        }
+        .projects {
+            padding: 28px 0 28px 0;
+        }
+        .team {
+            padding: 30px 0 30px 0;
+        }
+        .rewiews {
+            padding: 30px 0 30px 0;
+        }
+        .touch__wrapper {
+            margin-top: 10px;
+        }
+        .touch__subtitle {
+            font-size: 14px;
+        }
+        .down {
+            font-size: 14px;
+        }
+        .name {
+            font-size: 14px;
+        }
+        .mail {
+            font-size: 14px;
+        }
+        #descr {
+            font-size: 14px;
+        }
+        .feed__button {
+            font-size: 14px;
+            height: 37px;
+        }
+    }
